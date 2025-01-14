@@ -21,3 +21,6 @@ for (let index = 0; index < c.length; index++) {
 }
 var d = document.getElementById('81_6');
 d.click();
+
+var g = document.getElementById('Send');
+g.click();
