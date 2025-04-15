@@ -20,6 +20,7 @@ function cdf(){
         for(let i=0; i< ccgb.lengh; i++){
             if(ccgb[i].innerText == "填寫問卷"){
                 ccgb[i].click();
+                h1.onload = ccac;
             }
         }
     }else{
@@ -31,6 +32,14 @@ function cdf(){
 
 function ccaa(){
 fetch("https://raw.githubusercontent.com/meteorTriangle/NKUST_AUTO/refs/heads/main/autoClick.js").then(response => response.text()).then(data => {
+    var ca = "javascript: "+ data;
+    h1.setAttribute("src", ca);
+});
+h1.onload = cdf;
+};
+
+function ccac(){
+fetch("https://raw.githubusercontent.com/meteorTriangle/NKUST_AUTO/refs/heads/main/autoClickMid.js").then(response => response.text()).then(data => {
     var ca = "javascript: "+ data;
     h1.setAttribute("src", ca);
 });
