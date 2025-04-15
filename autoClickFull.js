@@ -18,7 +18,7 @@ function cdf(){
     if(h1.src.endsWith('StuFillInMid')){
         var ccgb = h1.contentDocument.getElementsByTagName('a');
         let i=0;
-        while(ccgb[i++].innerText == "填寫問卷");
+        while(ccgb[i++].innerText != "填寫問卷");
         ccgb[i-1].click();
         h1.onload = ccac;
     }else{
