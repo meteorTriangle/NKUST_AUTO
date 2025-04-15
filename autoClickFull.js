@@ -12,7 +12,7 @@ h1.setAttribute("width", 1000);
 
 function cdf(){
     var ccgh = h1.contentDocument.getElementById("excollect");
-    if(ccgh === None){
+    if(ccgh === null){
         var ccgb = h1.contentDocument.getElementsByTagName('a');
         for(int i=0; i< ccgb.lengh; i++){
             if(ccgb[i].innerText == "填寫問卷"){
