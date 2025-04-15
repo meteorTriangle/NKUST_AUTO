@@ -15,7 +15,7 @@ h1.setAttribute("width", 1000);
 
 function cdf(){
     var ccgh = h1.contentDocument.getElementById("excollect");
-    if(h1.src.endsWith('StuFillInMid')){
+    if(mid){
         var ccgb = h1.contentDocument.getElementsByTagName('a');
         let i=0;
         while(ccgb[i++].innerText != "填寫問卷");
@@ -45,6 +45,7 @@ h1.onload = cdf;
 };
 
 var ccgh = h1.contentDocument.getElementById("excollect");
+var mid = ccgh === null;
 if(ccgh === null){
     h1.setAttribute("src", NKUST_LINK.split("/Stu", 1)[0]+"/StuFillInMid");
 }
