@@ -17,11 +17,10 @@ function cdf(){
     var ccgh = h1.contentDocument.getElementById("excollect");
     if(h1.src.endsWith('StuFillInMid')){
         var ccgb = h1.contentDocument.getElementsByTagName('a');
-        for(let i=0; i< ccgb.lengh; i++){
-            if(ccgb[i].innerText == "填寫問卷"){
-                ccgb[i].click();
-                h1.onload = ccac;
-            }
+        let i=0;
+        while(ccgb[i++].innerText == "填寫問卷");
+        ccgb[i-1].click();
+        h1.onload = ccac;
         }
     }else{
         ccgh.click();
