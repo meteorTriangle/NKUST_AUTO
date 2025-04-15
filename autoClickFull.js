@@ -46,7 +46,6 @@ h1.onload = cdf;
 
 var ccgh = h1.contentDocument.getElementById("excollect");
 if(ccgh === null){
-    //StuFillInMid
     h1.setAttribute("src", NKUST_LINK.split("/Stu", 1)[0]+"/StuFillInMid");
 }
 
