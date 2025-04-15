@@ -10,9 +10,12 @@ a.body.appendChild(h1);
 h1.setAttribute("height", 1000);
 h1.setAttribute("width", 1000);
 
+
+
+
 function cdf(){
     var ccgh = h1.contentDocument.getElementById("excollect");
-    if(ccgh === null){
+    if(h1.src.endsWith('StuFillInMid')){
         var ccgb = h1.contentDocument.getElementsByTagName('a');
         for(let i=0; i< ccgb.lengh; i++){
             if(ccgb[i].innerText == "填寫問卷"){
@@ -34,5 +37,10 @@ fetch("https://raw.githubusercontent.com/meteorTriangle/NKUST_AUTO/refs/heads/ma
 h1.onload = cdf;
 };
 
+var ccgh = h1.contentDocument.getElementById("excollect");
+if(ccgh === null){
+    //StuFillInMid
+    h1.setAttribute("src", NKUST_LINK.split("/Stu", 1)[0]+"/StuFillInMid");
+}
 
 h1.onload = cdf;
