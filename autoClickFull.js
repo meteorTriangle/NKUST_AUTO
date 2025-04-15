@@ -21,7 +21,6 @@ function cdf(){
         while(ccgb[i++].innerText == "填寫問卷");
         ccgb[i-1].click();
         h1.onload = ccac;
-        }
     }else{
         ccgh.click();
         h1.onload = ccaa;
