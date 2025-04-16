@@ -4,6 +4,8 @@
 
 [LINK](https://youtube.com/shorts/mL6u_8Ktck0?si=wQGZ3jt54L2qrAe4)
 
+{%youtube 7Dy2blEEMFw %}
+
 ## 工具安裝教學
 ### 步驟
 1. 複製下列文字
