@@ -10,8 +10,6 @@ a.body.appendChild(h1);
 h1.setAttribute("height", 1000);
 h1.setAttribute("width", 1000);
 
-var ddcv = document.getElementsByClassName("pull-right-container");
-ddcv[1].click();
 
 
 
@@ -53,4 +51,14 @@ if(ccgh === null){
     ddcs[3].click();
 }
 
-h1.onload = cdf;
+h1.onload = cdgf;
+
+function cdgf(){
+    var ddcv = document.getElementsByClassName("pull-right-container");
+    if(mid){
+        ddcv[3].click();
+    }else{
+        ddcv[1].click();
+    }
+    h1.onload = cdf;
+}
