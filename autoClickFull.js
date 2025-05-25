@@ -49,7 +49,7 @@ var ccgh = h1.contentDocument.getElementById("excollect");
 h1.onload = cdgf;
 
 function cdgf(){
-    var ddcv = document.getElementsByClassName("pull-right-container");
+    var ddcv = h1.contentDocument.getElementsByClassName("pull-right-container");
     ddcv[1].click();
     h1.onload = cdf;
 }
