@@ -45,20 +45,11 @@ h1.onload = cdf;
 };
 
 var ccgh = h1.contentDocument.getElementById("excollect");
-var mid = ccgh === null;
-if(ccgh === null){
-    var ddcs = document.getElementsByClassName("pull-right-container");
-    ddcs[3].click();
-}
 
 h1.onload = cdgf;
 
 function cdgf(){
     var ddcv = document.getElementsByClassName("pull-right-container");
-    if(mid){
-        ddcv[3].click();
-    }else{
-        ddcv[1].click();
-    }
+    ddcv[1].click();
     h1.onload = cdf;
 }
