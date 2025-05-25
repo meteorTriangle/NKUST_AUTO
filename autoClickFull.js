@@ -5,11 +5,13 @@ var NKUST_LINK = a.location["href"];
 console.log(NKUST_LINK);
 a.body.innerHTML = "";
 var h1 = document.createElement("iframe");
-h1.setAttribute("src", NKUST_LINK.split("/Stu", 1)[0]+"/StuFillIn");
+h1.setAttribute("src", NKUST_LINK);
 a.body.appendChild(h1);
 h1.setAttribute("height", 1000);
 h1.setAttribute("width", 1000);
 
+var ddcv = document.getElementsByClassName("pull-right-container");
+ddcv[1].click();
 
 
 
@@ -47,7 +49,8 @@ h1.onload = cdf;
 var ccgh = h1.contentDocument.getElementById("excollect");
 var mid = ccgh === null;
 if(ccgh === null){
-    h1.setAttribute("src", NKUST_LINK.split("/Stu", 1)[0]+"/StuFillInMid");
+    var ddcs = document.getElementsByClassName("pull-right-container");
+    ddcs[3].click();
 }
 
 h1.onload = cdf;
