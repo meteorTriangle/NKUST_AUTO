@@ -15,16 +15,8 @@ h1.setAttribute("width", 1000);
 
 function cdf(){
     var ccgh = h1.contentDocument.getElementById("excollect");
-    if(mid){
-        var ccgb = h1.contentDocument.getElementsByTagName('a');
-        let i=0;
-        while(ccgb[i++].innerText != "填寫問卷");
-        ccgb[i-1].click();
-        h1.onload = ccac;
-    }else{
-        ccgh.click();
-        h1.onload = ccaa;
-    }
+    ccgh.click();
+    h1.onload = ccaa;
 }
 
 
